@@ -1,0 +1,111 @@
+.testimonials {
+    padding: 0px 0 50px;
+    color: #000000;
+    text-align: center;
+  }
+  .inner {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  .border {
+    width: 160px;
+    height: 3px;
+    background: grey;
+    margin: 26px auto;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .col {
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 25px;
+  }
+  .testimonial {
+    background:rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transform: translateY(0);
+    transition: transform 0.3s ease-out;
+    border-radius: 30px;
+  }
+  .testimonial:hover {
+    transform: translateY(-20px);
+  }
+  .testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .name {
+    font-size: 20px;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    margin: 10px 0;
+  }
+  .stars {
+    color: #000000;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width:960px) {
+  .col {
+    flex: 100%;
+    max-width: 80%;
+  }
+  }
+
+  @media screen and (max-width:600px) {
+  .col {
+    flex: 100%;
+    max-width: 100%;
+  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .carousel-container{
+    overflow: hidden;
+    background-color: #edede7;
+    white-space: nowrap;
+    width: 100%;
+    background-color: #edede7;
+    text-align: center;
+    z-index: 999;
+
+}
+
+
+.image-list{
+    display: inline-block;
+    animation: 35s slide infinite linear; 
+}
+.image-list img{
+    height: 150px;
+    bottom: 0;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+    
+}
+

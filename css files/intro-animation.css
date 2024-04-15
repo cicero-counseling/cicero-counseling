@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+.intro-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto Mono', monospace;
+}
+.intro-page p {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 10rem;
+  font-weight: 500;
+  padding: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.intro-page p span.typed-text {
+  font-weight: normal;
+  color: #000000;
+}
+.intro-page p span.cursor {
+  display: inline-block;
+  background-color: #000000;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.intro-page p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #000000; }
+  49% { background-color: #000000; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #000000; }
+}
+
+@media (max-width:1400px){
+    .intro-page p{
+        font-size: 8rem;
+    }
+}
+
+@media (max-width:900px){
+    .intro-page p{
+        font-size: 6rem;
+    }
+}
+
+@media (max-width:700px){
+    .intro-page p{
+        font-size: 5.2rem;
+    }
+}
+
+@media (max-width:500px){
+    .intro-page p{
+        font-size: 3.4rem;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes bibleAnimation {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -741px 0;
+  }
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #edede7; /* Adjust as per your design */
+  z-index: 9999; /* Ensure the preloader is on top of other content */
+}
+
+.icon {
+  width: 39px;
+  height: 33px;
+  scale: 3;
+  background-image: url("https://www.typetheword.site/bible.svg");
+  background-repeat: no-repeat;
+  background-position: -741px 0;
+  animation: bibleAnimation 1s steps(19) infinite; /* Animation runs infinitely */
+}

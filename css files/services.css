@@ -1,0 +1,121 @@
+.services{
+    text-align: center;
+    padding-top: 1vh;
+}
+  .services h1{
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 4px solid #000000;
+    font-size: 4rem;
+    margin-top: 40px;
+    font-family: 'Roboto Mono', monospace;
+    
+    
+  }
+  .cen{
+    max-width: 2500px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+  }
+  .service{
+    display: inline-block;
+    width: calc(100% / 3);
+    margin: 0 -2px;
+    padding: 3.5rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 20px; /* Added border-radius */
+  }
+  .service:hover{
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .service i{
+    color: #000000;
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  .service h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+  }
+  .service p{
+    padding-top: 1vh;
+    color: gray;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Roboto Mono', monospace;
+    
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .services {
+      height: auto;
+      padding-top: 10vh;
+      padding-bottom: 20vh;
+    }
+    
+    .services h1 {
+      font-size: 3rem;
+      padding-bottom: 0.5rem;
+    }
+    
+    .service {
+      width: 100%;
+      padding: 2rem;
+    }
+    
+    .service i {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    
+    .service h2 {
+      font-size: 1.5rem;
+    }
+    
+    .service p {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .services h1 {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .services {
+      height: auto;
+      padding-top: 2vh; /* Reduced top padding */
+      padding-bottom: 5vh; /* Reduced bottom padding */
+    }
+  
+    .services h1 {
+      font-size: 3rem;
+      padding-bottom: 0.5rem;
+    }
+  
+    .service {
+      width: 100%;
+      padding: 2rem;
+    }
+  
+    .service i {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  
+    .service h2 {
+      font-size: 1.5rem;
+    }
+  
+    .service p {
+      font-size: 0.9rem;
+    }
+  }

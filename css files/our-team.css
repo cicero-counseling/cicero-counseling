@@ -1,0 +1,150 @@
+/* Styles for .our-team-1 and .our-team-2 */
+.our-team-1,
+.our-team-2 {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: hidden;
+    padding-bottom: 5vh;
+    height: auto;
+}
+
+/* Styles for .team-row-1 and .team-row-2 */
+.team-row-1,
+.team-row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; /* Adjust the gap between columns */
+}
+
+/* Common styles for .team-column-1 and .team-column-4 */
+.team-column-1,
+.team-column-4 {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    font-family: 'Roboto Mono', monospace;
+    border: 0px solid #333; /* Add a border */
+    border-radius: 30px; /* Round the edges */
+    background: rgba(0, 0, 0, 0.1);
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 3vh;
+}
+
+.our-team-1 img{
+    width:500px;
+    height: auto;
+    border-radius: 40px;
+}
+
+.our-team-2 img{
+    height: auto;
+    width: 500px;
+}
+
+
+/* Styles for h1 in .team-column-1 and .team-column-4 */
+.team-column-1 h1,
+.team-column-4 h1 {
+    font-size: 2rem;
+    margin-top: 20px; /* Adjust top margin */
+}
+
+.team-column-1 h5{
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+/* Styles for .underline and .underline-2 in .team-column-1 and .team-column-4 */
+.team-column-1 h1 + .underline{
+    position: relative;
+    margin: 10px auto;
+    width: 60%; /* Adjust the width for the underline */
+    height: 3px;
+    background-color: #333;
+}
+.team-column-4 h1 + .underline-2{
+    position: relative;
+    margin: 10px auto;
+    width: 35%; /* Adjust the width for the underline */
+    height: 3px;
+    background-color: #333;
+}
+
+.team-column-1 h5 + .underline-99{
+    position: relative;
+    margin: 10px auto;
+    width: 26%; /* Adjust the width for the underline */
+    height: 3px;
+    background-color: #333;
+}
+/* Styles for p in .team-column-1 and .team-column-4 */
+.team-column-1 p,
+.team-column-4 p {
+    padding-top: 2vh;
+    font-size: 1.3rem;
+
+}
+
+.team-column-2-about img{
+    width: 500px;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .team-column-1,
+    .team-column-4 {
+        width: 45%; /* Adjust the width for larger screens */
+        margin: 0 1%; /* Adjust the margin for larger screens */
+    }
+}
+
+/* Styles for .team-column-1 and .team-column-4 for tablets and smaller screens */
+@media (max-width: 767px) {
+    .team-column-1,
+    .team-column-4 {
+        width: 100%; /* Occupy full width for tablets and smaller screens */
+        margin-bottom: 2rem;
+        margin:5vw; /* Add space between columns for tablets and smaller screens */
+    }
+    .team-column-2,
+    .team-column-3 img{
+        visibility: hidden;
+    }
+
+    .team-column-2,.team-column-3{
+        height: 0;
+    }
+    .team-column-4 p{
+        font-size: 0.8rem;
+    }
+    .team-column-1 p{
+        font-size: 0.8rem;
+    }
+
+    .team-column-1 h1{
+        font-size: 1.6rem;
+    }
+    .team-column-4 h1{
+        font-size: 1.6rem;
+    }
+
+    .team-row-1,
+    .team-row-2 {
+        gap: 0rem;
+    }
+
+}
+
+
+
+
+
+
+  
