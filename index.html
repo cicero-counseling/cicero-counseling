@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cicero Education</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css files/introduction.css">
+    <link rel="stylesheet" href="css files/cicero.css">
     <link rel="stylesheet" href="css files/services.css">
     <link rel="stylesheet" href="css files/counter.css">
     <link rel="stylesheet" href="css files/our-team.css">
@@ -26,28 +28,55 @@
     <script src="https://static.codepen.io/assets/editor/iframe/iframeConsoleRunner-dc0d50e60903d6825042d06159a8d5ac69a6c0e9bcef91e3380b17617061ce0f.js"></script>
     <script src="https://static.codepen.io/assets/editor/iframe/iframeRefreshCSS-e03f509ba0a671350b4b363ff105b2eb009850f34a2b4deaadaa63ed5d970b37.js"></script>
     <script src="https://static.codepen.io/assets/editor/iframe/iframeRuntimeErrors-29f059e28a3c6d3878960591ef98b1e303c1fe1935197dae7797c017a3ca1e82.js"></script>
+    <script src="navbar.js"></script>
 </head>
 
 <body>
-
-    <header class="header">
-        <a class="logo">CICERO COUNSELING</a>
-
-        <input type="checkbox" id="check">
-        <label for="check" class="ham-menu">
-            <i class='bx bx-menu-alt-right' id="menu-icon"></i>
-            <i class='bx bx-x' id="close-icon"></i>
-        </label>
-
-        <nav class="navbar">
-          <a href="#Home" style="--i:0;">Home</a>
-          <a href="#AboutUs" style="--i:1;">About Us</a>
-          <a href="#Services" style="--i:2;">Our Services</a>
-          <a href="https://forms.gle/5Qh9MHDL6Vpddbqn6" target="_blank" style="--i:3;">Contact Us</a>
-        </nav>
-        
-    
-    </header>
+  <nav class="menu-container">
+    <!-- burger menu -->
+    <input type="checkbox" aria-label="Toggle menu" />
+    <span></span>
+    <span></span>
+    <span></span>
+  
+    <!-- logo -->
+    <a href="https://cicerocounselling.com/" class="menu-logo">
+      <img src="images/logo-final.png" />
+    </a>
+  
+    <!-- menu items -->
+    <div class="menu">
+      <ul>
+        <li>
+          <h1 href="https://cicerocounselling.com/">
+            Cicero Counseling
+          </h1>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#Home">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#About">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#Services">
+            Services
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Contact Us
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
     <div class="preloader">
       <div class="icon"></div>
@@ -57,44 +86,44 @@
       <p><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
     </div>
 
-    <section class="our-team-1" id="AboutUs">
-      <div class="team-row-1">
-        <div class="team-column-1">
-          <div class="box-1">
-            <h5>ABOUT US</h5>
-            <div class="underline-99"></div>
-            <p>Cicero Counseling is more than just a college guidance service—we're dedicated to empowering students to build self-aware, purposeful futures. Through personalized support and comprehensive counseling, we help you navigate the college application process, make informed career choices, and ultimately, achieve your dreams.
 
-              Our mission goes beyond acceptance letters. We believe education is a transformative journey, shaping you not just academically, but personally. Developing strong character and virtue is central to our approach, as we strive to cultivate responsible and engaged citizens who will contribute meaningfully to society.</p>
-            </div>
+
+    <section class="cicero" id = "About">
+      <div class="cicero-row">
+        <div class="cicero-column-1">
+          <h1>What We Do:</h1>
+          <p>Through personalized college counseling, we provide comprehensive support, guidance, and mentorship, ensuring that every student thrives and becomes a well-rounded and capable individual ready to make a positive impact on the world</p>
         </div>
-
-        <div class="team-column-2">
-          <img src="images/logo.png">
+        <div class="cicero-column-2">
+          <img src="images/logo-final.png">
+        </div>
+        <div class="cicero-column-3">
+          <h1>Eudaimonia</h1>
+          <h3>pronunciation | "U-de-'mOn-E-a"</h3>
+          <p>"<b>human flourishing</b>" a contented state of being happy, healthy and prosperous</p>
+        </div>
       </div>
-
-
-
 
     </section>
 
-    <section class="our-team-2">
-      <div class="team-row-2">
-        <div class="team-column-3">
-          
+
+
+    <section class="introduction">
+      <div class="box">
+        <h1>The Cicero Way</h1>
+        <div class="row">
+          <div class="column-1">
+            <p>Cicero Counseling is more than just a college guidance service—we're dedicated to empowering students to build self-aware, purposeful futures. Through personalized support and comprehensive counseling, we help you navigate the college application process, make informed career choices, and ultimately, achieve your dreams. Our mission goes beyond acceptance letters. We believe education is a transformative journey, shaping you not just academically, but personally. Developing strong character and virtue is central to our approach, as we strive to cultivate responsible and engaged citizens who will contribute meaningfully to society. Join Cicero, and embark on a journey of self-discovery and academic excellence. Together, let's build a future that reflects your passions and empowers your voice.</p>
+          </div>
         </div>
-
-        <div class="team-column-4">
-          <p>Inspired by the classical liberal arts tradition, we emphasize a well-rounded education that fosters critical thinking, creativity, and empathy. This empowers you to explore diverse perspectives, articulate your voice, and ultimately, forge your unique path.
-
-            Join Cicero, and embark on a journey of self-discovery and academic excellence. Together, let's build a future that reflects your passions and empowers your voice.</p>
+        <div class="row">
+          <div class="column-2">
+            <img src="images/bridge.png">
+          </div>
         </div>
       </div>
+
     </section>
-    
-
-
-
 
 
 
@@ -173,13 +202,10 @@
     <section class="three-column-section">
       <div class="row">
         <div class="column">
-          <img src="a1-col.png">
-      
+          <p>The A1 College Admissions Prep Route is designed to provide comprehensive guidance and support for high school students who are preparing for the college admissions process. This package covers essential aspects such as profile building, essay writing seminars and lessons, college selection, and application assistance.</p>
         </div>
         <div class="column">
-          <h1>Overview</h1>
-          <div class="underline"></div>
-          <p>The A1 College Admissions Prep Route is designed to provide comprehensive guidance and support for high school students who are preparing for the college admissions process. This package covers essential aspects such as profile building, essay writing seminars and lessons, college selection, and application assistance.</p>
+          <img src="a1-col.png">
         </div>
         <div class="column">
           <h1>Services Included</h1>
@@ -198,16 +224,16 @@
     <section class="a2-college-column-section">
       <div class="a2-row">
         <div class="a2-column">
-          <img src="images/A2-COL.png">
+          <p>The A2 Comprehensive College Admissions Route is a comprehensive and tailored solution for high school students seeking expert guidance throughout the college admissions process. This package covers all crucial aspects, including essay support, college selection, application assistance, Early Decision (ED) guidance, and deadline management</p>
+
         </div>
         <div class="a2-column">
-          <h1>Overview</h1>
-          <div class="underline"></div>
-          <p>The A2 Comprehensive College Admissions Route is a comprehensive and tailored solution for high school students seeking expert guidance throughout the college admissions process. This package covers all crucial aspects, including essay support, college selection, application assistance, Early Decision (ED) guidance, and deadline management</p>
+          <img src="images/A2-COL.png">
+
         </div>
 
         <div class="a2-column">
-          <h1>Services Included:</h1>
+          <h1>Services Included</h1>
           <div class="underline-2"></div>
           <ul>
             <li>ESSAY SUPPORT</li>

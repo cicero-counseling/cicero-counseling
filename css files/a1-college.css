@@ -14,7 +14,6 @@
     width: 33%;
     box-sizing: border-box;
     text-align: center;
-    padding-bottom: 4.9rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,13 +21,18 @@
   }
   
   .column h1 {
-    font-size: 2.3rem;
+    font-size: 2rem;
+    margin-top: 70px;
+  }
+
+  .column h2 {
+    font-size: 4rem;
     margin-top: 70px;
   }
   
   .column p {
-    margin-top: 30px;
-    margin-right: 25px;
+    padding-top: 3rem;
+    padding-left: 2rem;
     font-size: 1.3rem;
     font-family: 'Roboto Mono', monospace;
   
@@ -169,10 +173,11 @@
     }
     
     .a2-column p {
-      margin-top: 30px;
-      margin-right: 25px;
+      padding-top: 3rem;
+      padding-left: 2rem;
       font-size: 1.3rem;
       font-family: 'Roboto Mono', monospace;
+  
 
     }
     

@@ -1,0 +1,96 @@
+.cicero-row {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.cicero-column-1, .cicero-column-3 {
+    width: 33%; /* reduced width to add spaces between columns */
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 1%; /* added margin to create spaces between columns */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.cicero-column-1 h1{
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 1.2rem;
+    font-size: 2rem;
+}
+
+.cicero-column-3 h1{
+   padding-top: 1.2rem;
+    font-size: 2rem;
+}
+.cicero-column-3 h3{
+    padding-bottom: 1rem;
+}
+
+.cicero-row p{
+    font-size: 1rem;
+    padding: 0.8rem;
+}
+
+.cicero-column-2 img{
+    width: 80%; /* make image full width of column */
+    height: 200px;
+    height: auto;
+    border-radius: 50px; /* add border radius to image */
+    margin: 10px; /* add margin to image */
+}
+
+@media only screen and (min-width: 1200px) {
+    .cicero-row {
+        height: 50vh;
+    }
+    .cicero-column-1, .cicero-column-2, .cicero-column-3 {
+        width: 25%;
+    }
+}
+
+/* Medium screens (992px to 1199px) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .cicero-row {
+        height: 40vh;
+    }
+    .cicero-column-1, .cicero-column-2, .cicero-column-3 {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .cicero-row {
+        height: 30vh;
+    }
+    .cicero-column-1, .cicero-column-2, .cicero-column-3 {
+        width: 40%;
+    }
+}
+
+/* Extra small screens (480px to 767px) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .cicero-row {
+        height: 20vh;
+    }
+    .cicero-column-1, .cicero-column-2, .cicero-column-3 {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .cicero-row {
+        height: 10vh;
+    }
+    .cicero-column-1, .cicero-column-2, .cicero-column-3 {
+        width: 100%;
+    }
+}
